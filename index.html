@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Игра Дракон-змейка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
+    
+    <div id="overlay">
+        <div id="score">Очки: 0</div>
+        <label for="difficulty">Выберите уровень сложности:</label>
+        <select id="difficulty">
+            <option value="easy">Легкий</option>
+            <option value="medium">Средний</option>
+            <option value="hard">Сложный</option>
+        </select>
+    </div>
+    
+    <button id="fullscreenBtn">Войти в полноэкранный режим</button>
+    
+    <!-- Кнопки управления для мобильных устройств -->
+    <div id="controls">
+        <button id="upBtn">↑</button>
+        <button id="leftBtn">←</button>
+        <button id="downBtn">↓</button>
+        <button id="rightBtn">→</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
